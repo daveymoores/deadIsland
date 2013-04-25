@@ -1,0 +1,141 @@
+﻿body{
+	margin:0;
+	padding:0;
+	background-color:#000;
+}
+
+/*for characters page */
+.modal_characters,.modal_story{
+	padding-top:30px;
+	text-align:center;
+	width:800px;
+	height:500px;
+}
+.modal_competition{
+	padding-top:30px;
+	text-align:center;
+	width:780px;
+	height:300px;
+	margin:auto;
+}
+.modal_competition .theform{
+	width:100%;
+	text-align:left;
+	margin:auto;
+}
+.modal_competition input[type=text]{
+	font-size:14px;
+	padding:10px;
+	width:330px;
+	border:0;	
+}
+.modal_competition label{
+	padding:15px 0 0 0 ;
+}
+.modal_competition select{
+	font-size:14px;
+	padding:9px;
+	width:auto;
+	border:0;	
+}
+.modal_competition input[type=checkbox]{
+	font-size:14px;
+	padding:9px;
+	width:15px;
+	padding:5px;
+	border:2px solid #000;
+}
+.modal_competition .dobformbutton{
+	margin-top:20px;
+}
+.failmsg p{
+	width:100%;
+	text-align:center;
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:24px;
+	font-weight:normal;
+	text-shadow: 3px 3px #000;
+}
+.help-block{
+	color:#999;
+	border:none;
+}
+.modal_competition span{
+	display:inline-table;
+	padding:1px;
+	border:1px solid #333;	
+}
+.modal_competition label{
+	color:#999;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:14px;
+	display:block;
+}
+.modal_competition hr{
+	height:0px;
+	border:0;
+	border-top:1px solid #666;
+}
+
+.modal_competition input[type=button]{
+	height:auto;
+	width:auto;
+	background-image:url(../img/submit.png);
+}
+
+.modal_competition #dob_dd,.modal_competition #dob_mm,.modal_competition #dob_yy{
+	width:45px;
+	}
+img{
+	border:none;
+}
+.alert{
+	background-color:#a11f1f;
+	padding:10px;
+	}
+
+.alert-error h4,.alert-error p,.alert-error li{
+	color:#FFF;
+	font-weight:bold;
+	font-size:14px;
+	padding:0;
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	
+}
+
+.dobformbutton {
+	border:0;
+   border-top: 1px solid #f71b26;
+   background: #8c0505;
+   background: -webkit-gradient(linear, left top, left bottom, from(#b80707), to(#8c0505));
+   background: -webkit-linear-gradient(top, #b80707, #8c0505);
+   background: -moz-linear-gradient(top, #b80707, #8c0505);
+   background: -ms-linear-gradient(top, #b80707, #8c0505);
+   background: -o-linear-gradient(top, #b80707, #8c0505);
+   padding: 11.5px 23px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 18px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.dobformbutton:hover {
+   border-top-color: #f00000;
+   background: #f00000;
+   color: #ccc;
+   }
+.dobformbutton:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+ 

@@ -1,0 +1,406 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+html,body{
+	height: 100%;
+	}
+
+body{
+	background-color:#000;
+	background-image:url(../img/page-bg.jpg);
+	background-position:top;
+	background-repeat:no-repeat;
+	background-size:cover;	
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+}
+img{
+	border:none;
+}
+
+.dobform{
+	padding:40px;
+	width:300px;
+	margin:auto;
+	background-color:rgba(0,0,0,0.7);   
+	-webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+	
+	}
+.dobform input{
+	padding:10px;
+}
+.dobformbutton {
+   border-top: 1px solid #f71b26;
+   background: #8c0505;
+   background: -webkit-gradient(linear, left top, left bottom, from(#b80707), to(#8c0505));
+   background: -webkit-linear-gradient(top, #b80707, #8c0505);
+   background: -moz-linear-gradient(top, #b80707, #8c0505);
+   background: -ms-linear-gradient(top, #b80707, #8c0505);
+   background: -o-linear-gradient(top, #b80707, #8c0505);
+   padding: 11.5px 23px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 18px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.dobformbutton:hover {
+   border-top-color: #f00000;
+   background: #f00000;
+   color: #ccc;
+   }
+.dobformbutton:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+   
+.failmsg{
+	 text-align:center;
+	 margin:50px auto auto auto;
+ }
+.failmsg h1{
+	text-shadow: 3px 3px #000;
+}
+/*
+#parallax-back
+{
+	position:absolute;
+	width: 1660px;
+	height: 870px;
+	background-image: url(../img/parallax-back.png);
+}
+*/
+
+#parallax_mid
+{
+	position:absolute;
+	width: 1754px;
+	height: 560px;
+	display:none;
+	background-image: url(../img/parallax-mid.png);
+	background-repeat:no-repeat;
+	background-position:bottom center;
+	background-size:contain;
+}
+#parallax_front
+{
+	position:absolute;
+	width: 733px;
+	height: 560px;
+	display:none;
+	background-image: url(../img/parallax-front.png);
+	background-repeat:no-repeat;
+	background-position:bottom center;
+	background-size:contain;
+}
+#parallax_front_2
+{
+	position:absolute;
+	width: 372px;
+	height: 560px;
+	display:none;
+	background-image: url(../img/parallax-front-2.png);
+	background-repeat:no-repeat;
+	background-position:bottom center;
+	background-size:contain;
+	}
+#bgcontainer
+{
+	position: absolute;
+	width: 100%;
+	min-width:100%;
+	height: 900px;
+	margin-bottom: 40px;
+	overflow: hidden;
+	background:url(../img/feature-bg.png) repeat-x bottom;
+}
+.container{
+	width:100%;
+	min-height:100%;
+	position:relative;
+}
+.mainheader{
+	width:100%;
+	text-align:center;
+	z-index:20;
+}
+.ignheader{
+	width:100%;
+	height:37px;
+	background:#000 url(../img/header-bg-grey.jpg) repeat-x;
+	position:fixed;
+	z-index:30;
+}
+.social{
+	position:absolute;
+	right:4px;
+	top:4px;
+	margin:0;
+	text-align:right;
+	height:25px;
+	font-size:10px;
+	line-height:20px;
+}
+.socialbtn-fb{
+	margin:3px 2px 0 0;
+	float:left;
+	display:block;
+	padding: 0;
+    position: relative;
+	
+	}
+.socialbtn-tw{
+	 margin:3px 2px 0 0;
+	height:20px;
+	width:80px;
+	float:left;
+	display:block;
+	}
+.socialbtn-gp{
+	 margin:3px 2px 0 0;
+	height:20px;
+	width:80px;
+	float:left;
+	display:block;
+	}
+.social-btns {
+  float:right;
+  height:37px;
+  margin:-37px 0 0;
+  position:relative;
+  width:auto;
+}
+.mainnav{
+	position:relative;
+	top:37px;
+	padding:10px 0;
+}
+.mainnav ul{
+	padding:0;
+	margin:0;
+}
+.mainnav ul li{
+	display:inline;
+	padding:0;
+	margin:0;
+	height:40px;
+	padding:20px;
+	background-image:url(../img/nav-separator.png);
+	background-position:right;
+	background-repeat:no-repeat;
+	opacity:1;
+}
+.mainnav ul li:last-child {
+	background:none;
+}
+.mainnav ul li:hover{
+	opacity:0.75;
+	}
+.mainwrap{
+	width:100%;
+	height:100%;
+	position:relative;
+	top:37px;
+	z-index:10;
+	border:0px solid yellow;
+}
+.mainsection{
+	min-height:505px;
+	max-width:940px;
+	margin:0 auto;
+	text-align:center;
+	z-index:11;
+	
+	border:0px solid orange;
+}
+
+.mainsection h1{
+	min-height:260px;
+	max-width:940px;
+	margin:20px 20px 0px 20px;
+	background:url(../img/dead-island-riptide.png) top no-repeat;
+	background-size:contain;
+}
+.playvideo{
+	display:block;
+	margin:auto;
+	width:30%;
+	max-width:200px;
+	height:200px;
+	background:url(../img/play-button.png) no-repeat;
+	background-size:contain;
+	opacity:0.8;
+	z-index:99;
+
+}
+.playvideo:hover{
+	opacity:1;
+	}
+
+.mainfooter{
+	width:100%;
+	padding-top:0px;;
+	text-align:center;
+	position:fixed;
+	bottom:0;
+}
+
+@media all and (max-height:1000px) {
+		.mainfooter{
+			position:relative;
+		}
+	}
+
+
+	
+.featurewrap{
+	width:100%;
+	padding-top:30px;
+	/*
+	background-image:url(../img/feature-bg.png),url(../img/bottom-panels-bg.png);
+	background-position:bottom, top center;
+	background-repeat:repeat-x, no-repeat;
+	*/
+	background-image:url(../img/bottom-panels-bg.png);
+	background-position:top center;
+	background-repeat: no-repeat;
+	
+}	
+.feature_1, .competition{
+	height:210px;
+	max-width:455px;
+	margin:20px 0;
+	display:inline-block;
+	opacity:0.85;
+}
+.feature_1:hover,.competition:hover{
+	opacity:1;
+}
+.feature_1{
+	padding-right:20px;
+	background-position:10px 10px;
+	background-repeat:no-repeat;
+	width:450px;
+}
+.competition{
+	padding-left:10px;
+	width:450px;
+	position:relative;
+}
+
+.colophon{
+	width:100%;
+	color:#666;
+	min-height:80px;
+	text-align:center;
+	background-color:#0a0a0a;
+	border-top:1px solid #232324;
+	padding-top:15px;
+}
+.colophon .wrap, .ignsignoff .wrap{
+	max-width:940px;
+	margin:0 auto;
+	}
+.footerlinks,.igncredits{	
+	width:440px;
+	}
+.producers{
+	padding:10px 0;
+	width:590px;
+	float:left;
+	text-align:left;
+}
+.filminfo{
+	width:330px;
+	padding:10px 0;
+	float:right;
+	text-align:left;
+	font-size:10px;
+}
+.filminfo p{
+	float:left;
+	letter-spacing:-0.0em;
+	line-height:11px;
+}
+.filminfo p.right{
+	float:right;
+}
+.filminfo a{
+	color:#999;
+}
+.ignsignoff{
+	height:80px;
+	border-top:1px solid #333;	
+	background-image:url(../img/html5.png) ,url(../img/ignsignoff-bg.jpg);
+	background-position:top center,top left;
+	background-repeat:no-repeat,repeat-x;
+}
+.ignsignoff, .ignsignoff a{
+	color:#999;
+	text-decoration:none;
+	}
+.ignsignoff a:hover{
+	text-decoration:underline;
+}
+
+.clearfloat{
+	clear:both;
+}
+.igncredits{
+	float:left;
+	padding-top:12px;
+	text-align:left;
+	font-size:12px;
+}
+.ignlink{
+	float:left;
+	padding:0 10px 0 0;
+	opacity:0.5;
+}
+.ignlink:hover{
+	opacity:1;
+}
+.footerlinks{
+	float:right;
+	text-align:right;
+	padding-top:25px;
+	font-size:14px;
+}
+
+div#floater{
+	z-index:12000;
+	width:100%;
+	height:755px;
+	text-align:center;
+	position:absolute;
+	top:0;
+	margin-left:auto;
+	margin-right:auto;
+	display:none;
+	}
+div#floater.show{
+	display:block;
+}
+/*  utility rules */
+
+.imagereplace{
+	/*image replacement technique: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement*/
+	text-indent:120%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.transition_opacity{	
+	-moz-transition: opacity .2s;    -webkit-transition: opacity .2s;    -o-transition: opacity .2s;    transition: opacity .2s;
+}
+
